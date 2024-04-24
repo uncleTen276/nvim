@@ -1,7 +1,19 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  cmd = {
+    "TSInstall",
+    "TSUninstall",
+    "TSUpdate",
+    "TSUpdateSync",
+    "TSInstallInfo",
+    "TSInstallSync",
+  },
+  keys = {
+    { "<leader>Tu", "<cmd>TSUpdateSync", desc = "Treesitter Update sync" },
+  },
+  event = { "BufRead", "VeryLazy" },
   opts = function()
-    local treesitter = require("nvim-treesitter.configs")
     return {
       indent = true,
       ensure_installed = {
@@ -20,6 +32,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "c_sharp",
       },
       autotag = {
         enable = true,

@@ -32,7 +32,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
+        -- "tsserver",
         "html",
         "cssls",
         "tailwindcss",
@@ -43,12 +43,8 @@ return {
         "prismals",
         "pyright",
         "gopls",
-      },
-
-      null_ls = {
-        setup = {
-          border = "rounded",
-        },
+        "csharp-language-server",
+        "json-lsp",
       },
     })
     mason_tool_installer.setup({

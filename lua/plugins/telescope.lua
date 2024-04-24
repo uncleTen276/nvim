@@ -1,3 +1,5 @@
+local icons = require("icons").ui
+
 return {
   {
     "telescope.nvim",
@@ -78,6 +80,9 @@ return {
         layout_strategy = "horizontal",
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
+
+        prompt_prefix = icons.Telescope .. " ",
+        selection_caret = icons.Forward .. " ",
         winblend = 0,
         mappings = {
           n = {},
@@ -93,6 +98,7 @@ return {
         },
       }
       opts.extensions = {
+
         file_browser = {
           theme = "dropdown",
           -- disables netrw and use telescope-file-browser in its place
