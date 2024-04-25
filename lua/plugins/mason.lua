@@ -34,7 +34,6 @@ return {
       ensure_installed = {
         "tsserver",
         "html",
-        "cssls",
         "tailwindcss",
         "svelte",
         "lua_ls",
@@ -44,6 +43,7 @@ return {
         "pyright",
         "gopls",
         "csharp_ls",
+        "ommisharp",
         "json-lsp",
       },
     })

@@ -15,5 +15,6 @@ keymap.set("n", "<S-tab>", "<cmd>bprevious<cr>")
 keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 
 -- Change to normal mode from insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk or kj" })
-keymap.set("i", "kj", "<ESC>")
+-- you can use this setting instead of using houdini-nvim but it also have so delay
+-- keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk or kj" })
+-- keymap.set("i", "kj", "<ESC>")
