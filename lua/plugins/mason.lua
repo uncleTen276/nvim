@@ -4,11 +4,11 @@ return {
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "neovim/nvim-lspconfig",
   },
   config = function()
     -- import mason
     local mason = require("mason")
-
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -32,7 +32,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        -- "tsserver",
+        "tsserver",
         "html",
         "cssls",
         "tailwindcss",
@@ -43,7 +43,7 @@ return {
         "prismals",
         "pyright",
         "gopls",
-        "csharp-language-server",
+        "csharp_ls",
         "json-lsp",
       },
     })
