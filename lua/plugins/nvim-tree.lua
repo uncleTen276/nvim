@@ -69,6 +69,9 @@ return {
           },
         },
       },
+      filters = {
+        dotfiles = false,
+      },
     },
     config = function(_, opts)
       local nvimtree = require("nvim-tree")

@@ -1,7 +1,7 @@
 local icons = require("icons").kind
 
 return {
-  "hrsh7th/nvim-cmp",
+  "nvim-cmp",
   event = "InsertEnter",
   lazy = true,
   dependencies = {
