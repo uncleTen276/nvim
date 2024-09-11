@@ -30,7 +30,7 @@ return {
       "tsx",
       "typescript",
       "yaml",
-      "c_sharp",
+      "java",
     },
     autotag = {
       enable = true,

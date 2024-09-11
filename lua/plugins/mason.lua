@@ -34,16 +34,12 @@ return {
       ensure_installed = {
         "tsserver",
         "html",
-        "tailwindcss",
-        "svelte",
+        -- "tailwindcss",
         "lua_ls",
         "graphql",
         "emmet_ls",
-        "prismals",
         "pyright",
         "gopls",
-        "csharp_ls",
-        "ommisharp",
         "json-lsp",
       },
     })
@@ -55,6 +51,8 @@ return {
         "black", -- python formatter
         "pylint",
         "eslint_d",
+        "java-debug-adapter",
+        "java-test",
       },
     })
   end,
