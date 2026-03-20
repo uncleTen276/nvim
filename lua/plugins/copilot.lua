@@ -19,4 +19,8 @@ return {
       })
     end,
   },
+  {
+    "zbirenbaum/copilot-cmp",
+    enabled = false, -- disable cmp integration
+  },
 }

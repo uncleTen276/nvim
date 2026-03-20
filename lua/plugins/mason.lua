@@ -25,7 +25,7 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
-        "tsserver",
+        -- "tsserver",
         "html",
         "tailwindcss",
         "lua_ls",
